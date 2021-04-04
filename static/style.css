@@ -1,0 +1,123 @@
+body{
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: fill;
+	height: 100%;
+}
+
+.profile{
+	position: absolute;
+    width: 100px;
+    height: 100px;
+    left: calc(40% - 100px/2);
+    top: calc(50% - 152px/2 - 230px);
+    border-radius: 50%;
+}
+
+.profile1{
+	position: absolute;
+	align-self: center;
+    width: 100px;
+    height: 100px;
+    left: calc(60% - 100px/2);
+    top: calc(50% - 152px/2 - 230px);
+    border-radius: 50%;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	align-content: space-evenly;
+	grid-template-rows: repeat(5,1fr);
+	background: rgba(17, 17, 17, 0.53);
+	border-radius: 49px;
+	margin: 5%;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+
+.grid-item{
+    margin: 5px;
+    background: rgba(124, 74, 71, 0.46);
+	border-radius: 11px;
+}
+
+h3{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	margin-top: 10px;
+	margin-left: 10px;
+	color: #FFFFFF;
+}
+
+h1{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 32px;	
+	color: #FFFFFF;
+}
+
+p{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	margin-top: -10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #FFFFFF;
+}
+
+.wide {
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+
+.mid{
+	text-align: center;
+}
+
+.nobg{
+	background: none;
+	margin: 0px;
+}
+
+.grid-center{
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.nomrg{
+	grid-template-rows: 50px;
+}
+
+button{
+	background: #7C4A47;
+	margin: 10px;
+	border-radius: 45px;
+	width: 1008px;
+	height: 90px;
+}
+
+input{
+	background: none;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	margin-top: -10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border: none;
+	color: #FFFFFF;
+}

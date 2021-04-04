@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" type="text/css">
+</head>
+
+<body>
+    <img class="profile" src="{{url_for('static',filename='profile.jpg')}}" alt="Profile Image">
+    <form action="/login" method="POST" enctype="multipart/form-data">
+        <div class="grid-container">
+            <div class="grid-item nobg wide mid nomgr">
+                <h1>Login</h1>
+            </div>
+            <div class="grid-item grid-center">
+                <h3>Username</h3>
+                <input type="email" name="login-username" id="login-username" placeholder="example@domain.com">
+            </div>
+            <div class="grid-item grid-center">
+                <h3>Password</h3>
+                <input type="password" name="login-password" id="login-password" placeholder="**********">
+            </div>
+            <div class="grid-item wide mid nobg nomrg">
+                <button class="wide" type="submit">
+                    <h1>Login</h1>
+                </button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
